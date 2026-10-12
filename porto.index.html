@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsekal Vero Herivo, S.Sos - Portofolio & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white min-h-screen">
+
+<audio id="bgMusic" loop>
+    <!-- Ganti 'earth.mp3' dengan file musik Anda (contoh: music.mp3) -->
+    <source src="earth.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+</audio>
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md z-40 border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg text-white tracking-tight hover:text-indigo-400 transition">My Portfolio<span class="text-indigo-400">.</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Tentang</a>
+                <a href="#cv-section" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Curriculum Vitae</a>
+                <a href="#certificates" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Bukti Sertifikat</a>
+                <a href="#contact" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Kontak</a>
+            </nav>
+            <a href="https://wa.me/6285156223684" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-teal-500 text-white text-sm font-medium px-4 py-2 rounded-full hover:opacity-90 transition shadow-lg shadow-indigo-500/20 transform hover:scale-105">
+                <i class="fa-brands fa-whatsapp"></i> Hubungi Saya
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-6 relative overflow-hidden">
+        <!-- Background Glow Accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wider uppercase mb-6 animate-pulse">
+                Customer Experience & Communication Professional
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Marsekal Vero Herivo, S.Sos
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Spesialis <span class="text-indigo-400 font-medium">Customer Experience, Digital Service, & Communication</span> berlatar akademis Sosiologi dengan rekam jejak prestasi di industri pelayanan publik.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#cv-section" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-indigo-500 text-white px-8 py-3.5 rounded-full font-medium hover:from-indigo-500 hover:to-indigo-400 transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                    <i class="fa-regular fa-file-pdf"></i> Lihat Curriculum Vitae
+                </a>
+                <a href="#certificates" class="w-full sm:w-auto bg-slate-800/80 border border-slate-700 text-slate-200 px-8 py-3.5 rounded-full font-medium hover:bg-slate-700/80 transition flex items-center justify-center gap-2 transform hover:-translate-y-1">
+                    <i class="fa-solid fa-certificate text-teal-400"></i> Lihat Sertifikat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-slate-900/60 border-y border-slate-800/80 px-6 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center">Profil Ringkas</h2>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto font-light">
+                Lulusan Sosiologi dengan keahlian kuat dalam komunikasi digital dan pengelolaan interaksi publik. Berbekal latar belakang di berbagai institusi pemerintahan, media, serta organisasi, terbiasa mengelola koordinasi dan penyampaian informasi secara profesional. Adaptif, teliti, dan antusias mengembangkan karier di bidang administrasi, kehumasan, maupun Public Relationsf.
+            </p>
+        </div>
+    </section>
+
+    <!-- Curriculum Vitae (CV) Section -->
+    <section id="cv-section" class="py-20 px-6 bg-slate-900/40 relative">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 px-3 py-1 rounded-full border border-teal-500/20">Dokumen Profesional</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mt-3 mb-3">Curriculum Vitae (CV)</h2>
+                <p class="text-slate-400 text-sm md:text-base">Untuk Curriculum Vitae saya, dapat dibuka dan diunduh dibawah ini.</p>
+            </div>
+
+            <!-- CV Preview Card -->
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-6 md:p-8 border border-slate-700/80 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6 transform hover:border-indigo-500/50 transition duration-300">
+                <div class="flex items-center gap-5 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl font-bold shadow-inner flex-shrink-0">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-lg mb-1">CV_MARSEKAL_VERO_HERIVO.pdf</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Berisi ringkasan profesional, riwayat pekerjaan lengkap (PAM JAYA, Setjen DPD RI, KKP RI), keahlian digital, organisasi, dan riwayat pendidikan.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row sm:flex-row gap-3 w-full md:w-auto">
+                    <a href="CV_MARSEKAL_VERO_HERIVO.pdf" target="_blank" class="flex-1 md:flex-none px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold shadow-lg shadow-indigo-600/30 transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i> Buka PDF
+                    </a>
+                    <a href="CV_MARSEKAL_VERO_HERIVO.pdf" download class="flex-1 md:flex-none px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white rounded-xl text-xs font-semibold shadow-lg shadow-teal-600/30 transition text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-download"></i> Unduh
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Bukti Sertifikat & Pencapaian Galeri -->
+    <section id="certificates" class="py-20 px-6 bg-slate-900/80 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Galeri Arsip</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white mt-3 mb-3">Sertifikat & Dokumen Pencapaian</h2>
+                <p class="text-slate-400 text-sm md:text-base">Klik tombol pada setiap kartu untuk memperbesar tampilan foto arsip dokumen.</p>
+            </div>
+
+            <!-- Grid Card Sertifikat -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Golden Call -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="golden.jpg" alt="Golden Call" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('golden.jpg', 'Golden Call - Customer Engagement Champion (PAM JAYA)')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Penghargaan Kerja</span>
+                            <h3 class="font-bold text-white text-base mb-1">Golden Call (PAM JAYA)</h3>
+                            <p class="text-xs text-slate-400 mb-3">Bronze Winner - Customer Engagement Champion Inbound.</p>
+                        </div>
+                        <button onclick="openModal('golden.jpg', 'Golden Call - Customer Engagement Champion (PAM JAYA)')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. English Club -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="club.jpeg" alt="English Kids Club" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('club.jpeg', 'English Kids Club - Level Gold')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-400 bg-purple-500/10 border border-purple-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Bahasa</span>
+                            <h3 class="font-bold text-white text-base mb-1">English Kids Club</h3>
+                            <p class="text-xs text-slate-400 mb-3">Sertifikasi Level Gold dengan predikat Very Good.</p>
+                        </div>
+                        <button onclick="openModal('club.jpeg', 'English Kids Club - Level Gold')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. IMKA (ARAB) -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="imka.jpg" alt="IMKA Bahasa Arab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('imka.jpg', 'Sertifikat IMKA Bahasa Arab - UIN Walisongo')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Bahasa</span>
+                            <h3 class="font-bold text-white text-base mb-1">IMKA Bahasa Arab</h3>
+                            <p class="text-xs text-slate-400 mb-3">Uji Kemampuan Bahasa Arab UIN Walisongo (Jayyid Jiddan).</p>
+                        </div>
+                        <button onclick="openModal('imka.jpg', 'Sertifikat IMKA Bahasa Arab - UIN Walisongo')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 4. TOEFL -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="toefl.jpg" alt="TOEFL Preparation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('toefl.jpg', 'Sertifikat TOEFL Preparation Test')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Bahasa</span>
+                            <h3 class="font-bold text-white text-base mb-1">TOEFL Preparation</h3>
+                            <p class="text-xs text-slate-400 mb-3">Sertifikat Tes TOEFL UIN Walisongo Semarang.</p>
+                        </div>
+                        <button onclick="openModal('toefl.jpg', 'Sertifikat TOEFL Preparation Test')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. Brilliant -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="birilliant.jpg" alt="Brilliant English Course" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('birilliant.jpg', 'Brilliant English Course - Kediri')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 border border-teal-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Pelatihan</span>
+                            <h3 class="font-bold text-white text-base mb-1">Brilliant English Course</h3>
+                            <p class="text-xs text-slate-400 mb-3">Program Pelatihan Bahasa Inggris Intensif di Pare, Kediri.</p>
+                        </div>
+                        <button onclick="openModal('birilliant.jpg', 'Brilliant English Course - Kediri')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. Jagadhita -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="jagadhita.jpg" alt="Jagadhita Debate Competition" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('jagadhita.jpg', 'Jagadhita Debate Competition')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Kompetisi</span>
+                            <h3 class="font-bold text-white text-base mb-1">Jagadhita Debate</h3>
+                            <p class="text-xs text-slate-400 mb-3">Partisipasi dalam Jagadhita Debate Competition UIN Walisongo.</p>
+                        </div>
+                        <button onclick="openModal('jagadhita.jpg', 'Jagadhita Debate Competition')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. Justisia -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="justisia.jpg" alt="Lomba Esai Nasional Justisia" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('justisia.jpg', 'Lomba Esai Nasional Ekologi Politik - LPM Justisia')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Kompetisi</span>
+                            <h3 class="font-bold text-white text-base mb-1">Lomba Esai LPM Justisia</h3>
+                            <p class="text-xs text-slate-400 mb-3">Peserta Lomba Esai Nasional Ekologi Politik.</p>
+                        </div>
+                        <button onclick="openModal('justisia.jpg', 'Lomba Esai Nasional Ekologi Politik - LPM Justisia')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Kominfo -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="kominfo.jpg" alt="Gerakan Literasi Pandu Digital Kominfo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('kominfo.jpg', 'Gerakan Literasi Pandu Digital Indonesia - Kominfo')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Pelatihan Nasional</span>
+                            <h3 class="font-bold text-white text-base mb-1">Pandu Digital Kominfo</h3>
+                            <p class="text-xs text-slate-400 mb-3">Empowering Students with Digital Literacy (Kementerian Kominfo).</p>
+                        </div>
+                        <button onclick="openModal('kominfo.jpg', 'Gerakan Literasi Pandu Digital Indonesia - Kominfo')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 9. KJMU -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="kjmu.jpg" alt="Pelatihan Kepemimpinan KJMU" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('kjmu.jpg', 'Pelatihan Kepemimpinan - Forum KJMU')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Kepemimpinan</span>
+                            <h3 class="font-bold text-white text-base mb-1">Pelatihan Kepemimpinan</h3>
+                            <p class="text-xs text-slate-400 mb-3">Membangun Jiwa Kepemimpinan Berkarakter di Era Milenial (KJMU).</p>
+                        </div>
+                        <button onclick="openModal('kjmu.jpg', 'Pelatihan Kepemimpinan - Forum KJMU')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 10. Social Movement -->
+                <div class="bg-slate-800/70 backdrop-blur-sm rounded-2xl border border-slate-700/80 overflow-hidden shadow-xl hover:shadow-indigo-500/10 hover:border-indigo-500/50 transition duration-300 flex flex-col group">
+                    <div class="aspect-[4/3] bg-slate-900 relative overflow-hidden">
+                        <img src="social.jpg" alt="International Class Social Movement" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                            <button onclick="openModal('social.jpg', 'International Class Program - Social Movement')" class="bg-white text-slate-900 px-4 py-2 rounded-full text-xs font-semibold shadow-lg transform translate-y-2 group-hover:translate-y-0 transition">
+                                <i class="fa-solid fa-expand mr-1"></i> Perbesar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-md mb-2 inline-block">Akademik Internasional</span>
+                            <h3 class="font-bold text-white text-base mb-1">Social Movement Class</h3>
+                            <p class="text-xs text-slate-400 mb-3">4-Month International Class Program FISIP UIN Walisongo.</p>
+                        </div>
+                        <button onclick="openModal('social.jpg', 'International Class Program - Social Movement')" class="w-full py-2 bg-slate-700 hover:bg-indigo-600 text-slate-200 hover:text-white text-xs font-semibold rounded-xl transition">
+                            Lihat Dokumen
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Viewer (Pop-up Sertifikat Perbesar) -->
+    <div id="imageModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-all">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative flex flex-col max-h-[90vh]">
+            <div class="p-4 border-b border-slate-800 flex items-center justify-between">
+                <h3 id="modalTitle" class="font-bold text-white text-sm md:text-base">Detail Dokumen</h3>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-sm font-bold transition">
+                    &times;
+                </button>
+            </div>
+            <div class="p-4 overflow-y-auto flex-1 flex items-center justify-center bg-black/60">
+                <img id="modalImage" src="" alt="Bukti Dokumen" class="max-h-[70vh] w-auto object-contain rounded-lg shadow-2xl">
+            </div>
+            <div class="p-3 bg-slate-900 text-right border-t border-slate-800">
+                <button onclick="closeModal()" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-medium transition shadow-md">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-950 text-white px-6 text-center border-t border-slate-900">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Mari Berdiskusi & Berkolaborasi</h2>
+            <p class="text-slate-400 text-sm md:text-base mb-8">
+                Terbuka untuk peluang karir di bidang Administration, Public Relations, dan fungsi operasional lainnya.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 text-sm">
+                <a href="mailto:marsekal003@gmail.com" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-full transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/20 transform hover:-translate-y-0.5">
+                    <i class="fa-regular fa-envelope"></i> EMAIL
+                </a>
+                <a href="https://wa.me/6285156223684" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-medium px-6 py-3 rounded-full transition flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 text-center text-xs text-slate-500 border-t border-slate-900/50">
+        <p>&copy; 2026 Marsekal Vero Herivo, S.Sos. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Modal Control -->
+    <script>
+        function openModal(imgSrc, titleText) {
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('modalTitle').innerText = titleText;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+
+        // Close Modal via keyboard Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+
+<script>
+    // Mengatur volume audio agar tidak terlalu besar / kecil (0.4 = 40%)
+    const music = document.getElementById('bgMusic');
+    music.volume = 0.4; 
+
+    // Otomatis mencoba memutar musik saat halaman pertama kali dibuka
+    window.addEventListener('click', () => {
+        if (music.paused) {
+            music.play().catch(() => {});
+            document.getElementById('musicIcon').className = "fa-solid fa-music animate-spin";
+        }
+    }, { once: true });
+</script>
+</body>
+</html>
