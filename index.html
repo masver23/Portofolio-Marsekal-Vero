@@ -14,7 +14,7 @@
 </head>
 <body class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white min-h-screen">
 
-<audio id="bgMusic" loop>
+<audio id="bgMusic" loop> loop preload="auto">
     <!-- Ganti 'earth.mp3' dengan file musik Anda (contoh: music.mp3) -->
     <source src="earth.mp3" type="audio/mpeg">
     Browser Anda tidak mendukung elemen audio.
@@ -405,15 +405,25 @@
 <script>
     // Mengatur volume audio agar tidak terlalu besar / kecil (0.4 = 40%)
     const music = document.getElementById('bgMusic');
+    music.preload = 'auto';
     music.volume = 0.4; 
 
-    // Otomatis mencoba memutar musik saat halaman pertama kali dibuka
-    window.addEventListener('click', () => {
-        if (music.paused) {
-            music.play().catch(() => {});
-            document.getElementById('musicIcon').className = "fa-solid fa-music animate-spin";
-        }
-    }, { once: true });
+    // Siapkan pemuatan musik sejak halaman dibuka
+music.load();
+
+// Coba autoplay; browser mungkin memblokirnya
+music.play().catch(() => {
+    // Tunggu interaksi pertama pengguna
+});
+
+function startMusic() {
+    if (music.paused) {
+        music.play().catch(() => {});
+    }
+}
+
+document.addEventListener('pointerdown', startMusic, {
+    once: true
 </script>
 </body>
 </html>
