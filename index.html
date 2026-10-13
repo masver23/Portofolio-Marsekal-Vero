@@ -23,15 +23,15 @@
     <!-- Header / Navbar -->
     <header class="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md z-40 border-b border-slate-800 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="font-bold text-lg text-white tracking-tight hover:text-indigo-400 transition">My Portfolio<span class="text-indigo-400">.</span></a>
+            <a href="#" class="font-bold text-lg text-white tracking-tight hover:text-indigo-400 transition">Portofolio Vero<span class="text-indigo-400">.</span></a>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Tentang</a>
                 <a href="#cv-section" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Curriculum Vitae</a>
-                <a href="#certificates" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Bukti Sertifikat</a>
+                <a href="#certificates" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Sertifikasi</a>
                 <a href="#contact" class="hover:text-indigo-400 transition transform hover:-translate-y-0.5">Kontak</a>
             </nav>
             <a href="https://wa.me/6285156223684" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-teal-500 text-white text-sm font-medium px-4 py-2 rounded-full hover:opacity-90 transition shadow-lg shadow-indigo-500/20 transform hover:scale-105">
-                <i class="fa-brands fa-whatsapp"></i> Hubungi Saya
+                <i class="fa-brands fa-whatsapp"></i> CONTACT ME
             </a>
         </div>
     </header>
@@ -44,13 +44,13 @@
 
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <span class="inline-block py-1.5 px-4 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wider uppercase mb-6 animate-pulse">
-                Customer Experience & Communication Professional
+                Public Relations & Administrative Professional
             </span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
                 Marsekal Vero Herivo, S.Sos
             </h1>
             <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-                Spesialis <span class="text-indigo-400 font-medium">Customer Experience, Digital Service, & Communication</span> berlatar akademis Sosiologi dengan rekam jejak prestasi di industri pelayanan publik.
+                Spesialis <span class="text-indigo-400 font-medium">Tata Kelola Administrasi & Komunikasi Institusional</span> berlatar belakang ilmu Sosiologi serta pengalaman luas di sektor publik dan media.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#cv-section" class="w-full sm:w-auto bg-gradient-to-r from-indigo-600 to-indigo-500 text-white px-8 py-3.5 rounded-full font-medium hover:from-indigo-500 hover:to-indigo-400 transition shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2 transform hover:-translate-y-1">
@@ -364,7 +364,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-slate-950 text-white px-6 text-center border-t border-slate-900">
         <div class="max-w-2xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Mari Berdiskusi & Berkolaborasi</h2>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Contact Me For Best Experience</h2>
             <p class="text-slate-400 text-sm md:text-base mb-8">
                 Terbuka untuk peluang karir di bidang Administration, Public Relations, dan fungsi operasional lainnya.
             </p>
@@ -403,27 +403,17 @@
     </script>
 
 <script>
-    // Mengatur volume audio agar tidak terlalu besar / kecil (0.4 = 40%)
+  // Mengatur volume audio agar tidak terlalu besar / kecil (0.4 = 40%)
     const music = document.getElementById('bgMusic');
-    music.preload = 'auto';
     music.volume = 0.4; 
 
-    // Siapkan pemuatan musik sejak halaman dibuka
-music.load();
-
-// Coba autoplay; browser mungkin memblokirnya
-music.play().catch(() => {
-    // Tunggu interaksi pertama pengguna
-});
-
-function startMusic() {
-    if (music.paused) {
-        music.play().catch(() => {});
-    }
-}
-
-document.addEventListener('pointerdown', startMusic, {
-    once: true
+    // Otomatis mencoba memutar musik saat halaman pertama kali dibuka
+    window.addEventListener('click', () => {
+        if (music.paused) {
+            music.play().catch(() => {});
+            document.getElementById('musicIcon').className = "fa-solid fa-music animate-spin";
+        }
+    }, { once: true });
 </script>
 </body>
 </html>
